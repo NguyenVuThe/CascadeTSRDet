@@ -1,9 +1,7 @@
-# Rethinking Detection Based Table Structure Recognition for Visually Rich Document Images
+# Table Recognition with Object Detection
 
-## Paper Link
-This paper has been published in Expert Systems with Applications, checkout the link below for the full version:
-https://www.sciencedirect.com/science/article/pii/S0957417425000831
-
+## Objectives
+This repo was created to learn and run experiments on Colab. Moreover, the repo is also for noting my requirements, settings and guides to run TSRDet `smoothly`.
 ## Requirements
 This codebase is built on top of [Detectron2](https://github.com/facebookresearch/detectron2). Follow the instructions [here](https://detectron2.readthedocs.io/en/latest/tutorials/install.html) to install Detectron2.
 
@@ -26,8 +24,6 @@ python inference.py --mode recognize --structure_config_path <path of config.yam
 Check the teds.py for calculating the TEDS score.
 
 ## Citing
-
-Please cite our work if you think it is helpful:
 ```
 @article{xiao2025rethinking,
   title={Rethinking detection based table structure recognition for visually rich document images},
@@ -38,6 +34,11 @@ Please cite our work if you think it is helpful:
   publisher={Elsevier}
 }
 ```
+## Paper Link
+# Rethinking Detection Based Table Structure Recognition for Visually Rich Document Images
+This paper has been published in Expert Systems with Applications, checkout the link below for the full version:
+https://www.sciencedirect.com/science/article/pii/S0957417425000831
+
 
 ## Acknowledgement
 This project heavily relys on [Table-Transformer](https://github.com/microsoft/table-transformer), especially for the post-processing part. We thank the authors for sharing their implementations and related resources.
