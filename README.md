@@ -35,7 +35,7 @@ Check the teds.py for calculating the TEDS score.
 }
 ```
 ## Paper Link
-# Rethinking Detection Based Table Structure Recognition for Visually Rich Document Images
+### Rethinking Detection Based Table Structure Recognition for Visually Rich Document Images
 This paper has been published in Expert Systems with Applications, checkout the link below for the full version:
 https://www.sciencedirect.com/science/article/pii/S0957417425000831
 
