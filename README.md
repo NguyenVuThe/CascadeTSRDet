@@ -1,13 +1,11 @@
 # Table Recognition with Object Detection
 
 ## Objectives
-This repo was created to learn and run experiments on Colab. Moreover, the repo is also for noting my requirements, settings and guides to run TSRDet `smoothly`.
+This repo was created to learn and run experiments on Colab. Moreover, the repo is also for noting my requirements, settings and guides to run TSRDet smoothly.
 ## Requirements
 1. Follow the official [Detectron2 installation guide](https://detectron2.readthedocs.io/en/latest/tutorials/install.html) that matches your CUDA version.
 
-2. After installing Detectron2, install the remaining dependencies listed in the [requirements.txt](https://github.com/NguyenVuThe/CascadeTSRDet/blob/master/requirements.txt) file.
-
-3. For clearer guide, please check the [guide.txt](https://github.com/NguyenVuThe/CascadeTSRDet/blob/master/guide.txt) file. This file shows how I setup the environment for the model on conda Windows 10, CUDA 11.8.
+2. For clearer guide, please check the [guide.txt](https://github.com/NguyenVuThe/CascadeTSRDet/blob/master/guide.txt) file. This file shows how I setup the environment for the model on conda Windows 10, CUDA 11.8.
 
 ## Datasets and Pretrained Model
 
@@ -18,6 +16,22 @@ This repo was created to learn and run experiments on Colab. Moreover, the repo 
 |[SciTSR](https://huggingface.co/datasets/uobinxiao/SciTSR_Detection)|[SciTSR](https://drive.google.com/drive/folders/1IogkVxQ1IkOpvqtieYYoTir-NrXHsNdg?usp=sharing)|
 
 ## Configuration and Training
+
+# 1. Setting the COCO dataset
+Check [config.yaml](https://github.com/NguyenVuThe/CascadeTSRDet/blob/master/config.yaml) file, change the image and json paths of your prefer dataset
+Set Resume to True if you want to continue the train, remember to add the weight file to OUTPUT_DIR in yaml files in [model_config](https://github.com/NguyenVuThe/CascadeTSRDet/tree/master/model_config)
+
+# 2. Training
+Check train_net.py and comment the unused datasets. Example here I'm using FinTabNet
+```
+#publaynet_args = argparse.Namespace(**args.PubTables1M)
+publaynet_args = argparse.Namespace(**args.FinTabNet)
+#publaynet_args = argparse.Namespace(**args.SciTSR)
+```
+Then run
+```
+python train_net.py
+```
 
 ## Inference and Evaluation
 Check the inference.py and test.sh for the inference. A sample inference command could be:
