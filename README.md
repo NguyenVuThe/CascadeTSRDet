@@ -17,11 +17,17 @@ This repo was created to learn and run experiments on Colab. Moreover, the repo 
 
 ## Configuration and Training
 
-# 1. Setting the COCO dataset
-Check [config.yaml](https://github.com/NguyenVuThe/CascadeTSRDet/blob/master/config.yaml) file, change the image and json paths of your prefer dataset
-Set Resume to True if you want to continue the train, remember to add the weight file to OUTPUT_DIR in yaml files in [model_config](https://github.com/NguyenVuThe/CascadeTSRDet/tree/master/model_config)
+### 1. Setting the COCO Dataset
 
-# 2. Training
+Check the [config.yaml](https://github.com/NguyenVuThe/CascadeTSRDet/blob/master/config.yaml) file and update the image and JSON paths to match your preferred dataset.
+
+Set `Resume: True` if you want to continue training.  
+Make sure to specify the path to the pretrained weight file under `OUTPUT_DIR` in the YAML files inside the [model_config](https://github.com/NguyenVuThe/CascadeTSRDet/tree/master/model_config) directory.
+
+The training setting is also set in the the YAML files inside the [model_config](https://github.com/NguyenVuThe/CascadeTSRDet/tree/master/model_config)
+
+
+### 2. Training
 Check train_net.py and comment the unused datasets. Example here I'm using FinTabNet
 ```
 #publaynet_args = argparse.Namespace(**args.PubTables1M)
