@@ -1,0 +1,8 @@
+python = 3.10
+pip install torch==2.6.0 torchvision==0.21.0 torchaudio==2.6.0 --index-url https://download.pytorch.org/whl/cu118
+pip install cython
+pip install “git+https://github.com/philferriere/cocoapi.git#egg=pycocotools&subdirectory=PythonAPI"
+pip install ninja
+git clone https://github.com/facebookresearch/detectron2.git
+python -m pip install -e detectron2
+pip install "numpy<2.0" "opencv-python<4.12" imgaug==0.4.0

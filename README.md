@@ -3,7 +3,11 @@
 ## Objectives
 This repo was created to learn and run experiments on Colab. Moreover, the repo is also for noting my requirements, settings and guides to run TSRDet `smoothly`.
 ## Requirements
-This codebase is built on top of [Detectron2](https://github.com/facebookresearch/detectron2). Follow the instructions [here](https://detectron2.readthedocs.io/en/latest/tutorials/install.html) to install Detectron2.
+1. Follow the official [Detectron2 installation guide](https://detectron2.readthedocs.io/en/latest/tutorials/install.html) that matches your CUDA version.
+
+2. After installing Detectron2, install the remaining dependencies listed in the [requirements.txt](https://github.com/NguyenVuThe/CascadeTSRDet/blob/master/requirements.txt) file.
+
+3. For clearer guide, please check the [guide.txt](https://github.com/NguyenVuThe/CascadeTSRDet/blob/master/guide.txt) file. This file shows how I setup the environment for the model on conda Windows 10, CUDA 11.8.
 
 ## Datasets and Pretrained Model
 
