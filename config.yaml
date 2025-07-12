@@ -8,8 +8,8 @@ FinTabNet:
     test_image_path: "D:/MyWorking/dataset/FinTabNet.c/FinTabNet.c-Structure/images"
 
     train_json_path: "D:/MyWorking/CascadeTSRDetSEMv2/dataset/ftbc_full_6classes_train.json"
-    val_json_path: "D:/MyWorking/dataset/dataset/ftbc_one_6classes_val.json"
-    test_json_path: "D:/MyWorking/dataset/dataset/ftbc_one_6classes_test.json"
+    val_json_path: "D:/MyWorking/CascadeTSRDetSEMv2/dataset/ftbc_full_6classes_val.json"
+    test_json_path: "D:/MyWorking/CascadeTSRDetSEMv2/dataset/ftbc_full_6classes_test.json"
 
     config_file: "model_config/fintabnet.yaml"
     meta:
